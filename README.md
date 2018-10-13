@@ -1,6 +1,4 @@
 # aws_upload
-command for pushing project to aws.
-
 create instance on aws EC2.
 get SSH keyfile save in local computer.
 get ip address of instance createtd.
@@ -23,9 +21,31 @@ server open.
 
 write command.
 
+
+
+
+
+
 for python -
 
--->ps -eaf|grep uwsgi   -for checking python files . optinal only for python code.
+-->ec2-user             	-ec2user-user.
+
+-->ps -eaf|grep uwsgi   	-for checking python files . optinal only for python code.
+
+-->cd BOTNLP            	-for pulling directory.
+
+-->git pull origin master  	-for pulling updated file from git.
+
+-->git login
+
+-->git password
+
+--> sudo uwsgi --emperor /etc/uwsgi/vassals --uid ec2-user --gid ec2-user
+
+
+
+
+
 
 for nodejs -
 
@@ -37,17 +57,25 @@ for nodejs -
 
 -->kill process-id       -for killing running process.
 
+-->cd BOTNode
+
 -->git pull origin master
 
 -->git login
 
 -->git password
 
--->vi filepath            -for checking files.
+optional * -->vi filepath            -for checking files.
 
 -->pm2 start server/server.js   -for checking update.
 		OR
 -->pm2 start path to file.js
 
 -->exit()
+
+
+
+
+
+ 
 
